@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Ecoagro</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar" id="sidebar">
+        <div class="logo">
+          <img
+            src="IMG/Logo EcoAgro.png"
+            alt="Logo Ecoagro"
+            class="ecoagro-btn"
+          />
+        </div>
+        <div class="user-info">
+          <div class="avatar">
+            <img src="IMG/Perfil Masculino.png" alt="Avatar João Silva" />
+          </div>
+          <span>Ex.: João Silva</span>
+        </div>
+        <nav class="menu">
+          <h3>Análises</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="IMG/Icone Dashboard.png" alt="Ícone Dashboard" />
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="IMG/Icone Previsao do Tempo.png"
+                  alt="Ícone Previsão do Tempo"
+                />
+                Previsão do Tempo
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="IMG/Icone Gestao de Insumos.png"
+                  alt="Ícone Gestão de Insumos"
+                />
+                Gestão de Insumos
+              </a>
+            </li>
+          </ul>
+          <h3>Controle</h3>
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="IMG/Icone Calendário de Plantio e Colheita.png"
+                  alt="Ícone Calendário"
+                />
+                Calendário de Plantio e Colheita
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <button class="toggle-menu-btn" onclick="toggleMenu()">☰</button>
+      <main class="main-content">
+        <div class="module calendario">
+          <h2>Calendário de Plantio e Colheita</h2>
+          <div class="item">
+            <img
+              src="IMG/Icone Plantio, Colheita e Compras.png"
+              alt="Ícone Plantio"
+            />
+            <span>Plantio: Em 5 dias</span>
+          </div>
+          <div class="item">
+            <img
+              src="IMG/Icone Plantio, Colheita e Compras.png"
+              alt="Ícone Colheita"
+            />
+            <span>Colheita: Em 26 dias</span>
+          </div>
+          <div class="item">
+            <img
+              src="IMG/Icone Plantio, Colheita e Compras.png"
+              alt="Ícone Compras"
+            />
+            <span>Compras: Em 1 dia</span>
+          </div>
+        </div>
+
+        <div class="module previsao-tempo">
+          <h2>Previsão do Tempo</h2>
+          <div class="item">
+            <img src="IMG/Icone Clima.png" alt="Ícone Clima" />
+            <span>Clima: Ensolarado</span>
+          </div>
+          <div class="item">
+            <img src="IMG/Icone Temperatura.png" alt="Ícone Temperatura" />
+            <span>Temperatura: 36°C</span>
+          </div>
+          <div class="item">
+            <img src="IMG/Icone Umidade.png" alt="Ícone Umidade" />
+            <span>Umidade: 30%</span>
+          </div>
+        </div>
+
+        <div class="module gestao-insumos">
+          <h2>Gestão de Insumos</h2>
+          <div class="item">
+            <img src="IMG/Icone Sementes.png" alt="Ícone Sementes" />
+            <span>Sementes: 12 kg</span>
+          </div>
+          <div class="item">
+            <img src="IMG/Icone Fertilizantes.png" alt="Ícone Fertilizantes" />
+            <span>Fertilizantes: 36%</span>
+          </div>
+          <div class="item">
+            <img src="IMG/Icone Equipamentos.png" alt="Ícone Equipamentos" />
+            <span>Equipamentos: 30%</span>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script>
+      function toggleMenu() {
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
