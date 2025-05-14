@@ -159,10 +159,12 @@ html {
 /* Main Content */
 .main-content {
   padding: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex; /* Troque grid por flex para garantir alinhamento lado a lado */
+  flex-wrap: wrap; /* Permite quebrar linha se faltar espaço */
   gap: 20px;
-  position: relative; /* Para posicionar a imagem dos agricultores */
+  position: relative;
+  justify-content: flex-start; /* Alinha à esquerda */
+  align-items: flex-start;
 }
 
 .module {
@@ -263,35 +265,124 @@ button:hover {
   opacity: 0.8; /* Reduz a opacidade ao passar o mouse */
 }
 
+.calendario {
+  background-color: #7db376; /* verde claro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alinha à esquerda */
+  justify-content: flex-start;
+}
+
 .calendario h2 {
-  background-color: #21461b; /* Fundo verde escuro */
-  color: #fff; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  margin-top: 0; /* Remove margem superior */
-  margin-bottom: 15px; /* Espaçamento inferior */
-  font-size: 1.2em; /* Tamanho do texto */
-  text-align: center; /* Centraliza o texto */
+  background-color: #264d26;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin: -20px -20px 20px -25px; /* remove espaço interno extra e cola o título */
+  width: calc(100% + 40px); /* cobre totalmente o topo */
+   width: 325px;
 }
+
+.calendario .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendario .item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.calendario .item span {
+  font-size: 1em;
+  color: #000;
+}
+
+.gestao-insumos {
+  background-color: #7db376; /* verde claro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alinha à esquerda */
+  justify-content: flex-start;
+}
+
 .gestao-insumos h2 {
-  background-color: #21461b; /* Fundo laranja */
-  color: #fff; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  margin-top: 0; /* Remove margem superior */
-  margin-bottom: 15px; /* Espaçamento inferior */
-  font-size: 1.2em; /* Tamanho do texto */
-  text-align: center; /* Centraliza o texto */
+  background-color: #264d26;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin: -20px -20px 20px -25px; /* remove espaço interno extra e cola o título */
+  width: calc(100% + 40px); /* cobre totalmente o topo */
+   width: 325px;
 }
+
+.gestao-insumos .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.gestao-insumos .item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.gestao-insumos .item span {
+  font-size: 1em;
+  color: #000;
+}
+
+.previsao-tempo {
+  background-color: #7db376; /* verde claro */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px; /* ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alinha à esquerda */
+  justify-content: flex-start;
+}
+
 .previsao-tempo h2 {
-  background-color: #21461b; /* Fundo azul */
-  color: #fff; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  margin-top: 0; /* Remove margem superior */
-  margin-bottom: 15px; /* Espaçamento inferior */
-  font-size: 1.2em; /* Tamanho do texto */
-  text-align: center; /* Centraliza o texto */
+  background-color: #264d26;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  margin: -20px -20px 20px -25px; /* remove espaço interno extra e cola o título */
+  width: calc(100% + 40px); /* cobre totalmente o topo */
+   width: 325px;
+}
+
+.previsao-tempo .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.previsao-tempo .item img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.previsao-tempo .item span {
+  font-size: 1em;
+  color: #000;
 }
 
 .menu li a {
