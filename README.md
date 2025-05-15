@@ -1,7 +1,9 @@
 # EcoAgro: Soluções Inteligentes para a Agricultura Amazônica
 
-[![Status do Projeto](https://img.shields.io/badge/status-em_desenvolvimento-yellow)(https://github.com/FL4V10ARC/ECOAGRO)
-[![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)(https://opensource.org/license/mit)
+[![Status do Projeto](https://img.shields.io/badge/status-em_desenvolvimento-yellow)
+(https://github.com/FL4V10ARC/ECOAGRO)
+[![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)
+(https://opensource.org/license/mit)
 ![Linguagens](https://img.shields.io/github/languages/count/FL4V10ARC/ECOAGRO)   
 ![Último Commit](https://img.shields.io/github/last-commit/FL4V10ARC/ECOAGRO)   
 
@@ -69,13 +71,15 @@ Este projeto está licenciado sob a licença [MIT License] - veja o arquivo [MIT
 ## 📧 Contato
 
 * [FLAVIO] (flavicarvalho9029@gmail.com(mailto:flaviocarvalho9029@gmail.com))
-* https://www.linkedin.com/in/fl%C3%A1vio-carvalho-79294a217?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+* www.linkedin.com/in/flávio-carvalho-79294a217
+  
 *[BEATRIZ]
+
 *[MEME]
+
 *[CARLOS]
 
 ## 🚀 Próximos Passos
 
-* APROMORAMENTO DO CODIGO
-
+APRIMORAMENTO
 ---

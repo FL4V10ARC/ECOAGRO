@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7ebcb;
+  color: #2e4c2f;
+  background-image: url("IMG/Calendário de Plantio e Colheita - Dia 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem 1rem 1rem; /* menos padding embaixo */
+  background-color: transparent;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  margin-right: -20px;
+}
+
+.logo img {
+  width: 150px; /* ou outro valor menor */
+  height: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2e4c2f;
+  margin: 0;
+  align-self: flex-start;
+  position: absolute;
+  left: 50%;
+  top: 0.5rem;
+  transform: translateX(-50%);
+}
+
+main {
+  border-radius: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  grid-auto-rows: auto;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.item {
+  text-align: center;
+}
+
+.item img {
+  width: 180px; /* aumente o valor conforme desejar */
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item p {
+  margin-top: 0.8rem;
+  font-weight: bold;
+  color: #2e4c2f;
+  font-size: 1.3rem; /* aumenta o tamanho do texto */
+}
+
+.item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s;
+}
+
+.item a:hover {
+  transform: scale(1.05);
+}

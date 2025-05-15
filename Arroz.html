@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arroz (Sequeiro)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Arroz.css" />
+    <link rel="icon" type="image/png" href="IMG/Icone EcoAgro.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <button onclick="window.location.href='menu.html'" class="logo" title="Ir para o menu" style="background:none;border:none;padding:0;cursor:pointer;">
+          <img
+            src="IMG/Logo EcoAgro.png"
+            alt="Logo Ecoagro"
+            class="ecoagro-btn"
+          />
+        </button>
+      </div>
+      <div class="title">Arroz (Sequeiro)</div>
+      <div class="seasons-row">
+        <img src="IMG/arroz.jpg" alt="Arroz" class="img-redonda" />
+        <div class="seasons-cards">
+          <div class="season-card">
+            <img src="https://img.icons8.com/ios-filled/80/flower.png" alt="Primavera" />
+            <p><strong>Primavera</strong></p>
+            <span>22/09 - 21/12</span>
+          </div>
+          <div class="season-card">
+            <img src="https://img.icons8.com/ios-filled/80/sun--v1.png" alt="Verão" />
+            <p><strong>Verão</strong></p>
+            <span>21/12 - 20/03</span>
+          </div>
+          <div class="season-card">
+            <img src="https://img.icons8.com/ios-filled/80/deciduous-tree.png" alt="Outono" />
+            <p><strong>Outono</strong></p>
+            <span>20/03 - 21/06</span>
+          </div>
+          <div class="season-card">
+            <img src="https://img.icons8.com/ios-filled/80/snow.png" alt="Inverno" />
+            <p><strong>Inverno</strong></p>
+            <span>21/06 - 22/09</span>
+          </div>
+        </div>
+      </div>
+      <div class="phases">
+        <div class="phase">Pós-Colheita e Preparação para o Próximo Ciclo</div>
+        <div class="phase">Preparação, Plantio e Crescimento</div>
+        <div class="phase">Crescimento, Floração, Enchimento dos Grãos</div>
+        <div class="phase">Maturação e Colheita</div>
+      </div>
+      <div class="weeks">
+        <span class="weeks-title">SEMANAS</span>
+        <div class="week-labels">
+          <div class="week">0</div>
+          <div class="week active">1</div>
+          <div class="week">2</div>
+          <div class="week">3</div>
+          <div class="week">4</div>
+          <div class="week">5</div>
+          <div class="week">6</div>
+          <div class="week">7</div>
+          <div class="week">8</div>
+          <div class="week">9</div>
+          <div class="week">10</div>
+          <div class="week">11</div>
+          <div class="week">12</div>
+          <div class="week">13</div>
+          <div class="week">14</div>
+          <div class="week">15</div>
+          <div class="week">16</div>
+          <div class="week">17</div>
+          <div class="week">18</div>
+          <div class="week">19</div>
+        </div>
+      </div>
+      <div class="info">
+        <img class="farmer" src="IMG/Farm02.png" alt="Agricultor" />
+        <div class="info-box">
+          Preparo do solo: aração, gradagem e correção da acidez.
+        </div>
+        <div class="info-box">
+          Aplicar calcário para corrigir o pH do solo, se indicado pela análise.
+        </div>
+      </div>
+    </div>
+    <script>
+      const infoSemanas = {
+        0: [
+          "Descanso do solo e planejamento do ciclo.",
+          "Verificação de insumos e equipamentos.",
+        ],
+        1: [
+          "Preparo do solo: aração, gradagem e correção da acidez.",
+          "Aplicar calcário para corrigir o pH do solo, se indicado pela análise.",
+        ],
+        2: [
+          "Plantio das sementes de arroz.",
+          "Irrigação inicial e monitoramento de pragas.",
+        ],
+        3: ["Adubação de cobertura.", "Controle de plantas daninhas."],
+        4: [
+          "Monitoramento de pragas e doenças.",
+          "Reforço na irrigação se necessário.",
+        ],
+        5: [
+          "Aplicação de defensivos agrícolas, se necessário.",
+          "Acompanhamento do desenvolvimento das plantas.",
+        ],
+        6: [
+          "Verificação de nutrientes no solo.",
+          "Reaplicação de adubo se necessário.",
+        ],
+        7: ["Controle de ervas daninhas.", "Monitoramento de pragas."],
+        8: ["Ajuste da irrigação.", "Observação do crescimento das plantas."],
+        9: ["Aplicação de fertilizantes foliares.", "Verificação de doenças."],
+        10: ["Monitoramento do enchimento dos grãos.", "Controle de pragas."],
+        11: ["Redução gradual da irrigação.", "Preparação para a maturação."],
+        12: [
+          "Observação do ponto de colheita.",
+          "Ajuste de equipamentos de colheita.",
+        ],
+        13: [
+          "Início da colheita se maturação adequada.",
+          "Separação dos grãos colhidos.",
+        ],
+        14: ["Finalização da colheita.", "Armazenamento dos grãos."],
+        15: ["Limpeza dos equipamentos.", "Análise de produtividade."],
+        16: ["Preparação do solo para o próximo ciclo.", "Descanso do solo."],
+        17: [
+          "Planejamento de rotação de culturas.",
+          "Compra de novos insumos.",
+        ],
+        18: ["Revisão de resultados do ciclo.", "Ajustes para próxima safra."],
+        19: ["Descanso do solo.", "Planejamento final para o próximo plantio."],
+      };
+
+      const weeks = document.querySelectorAll(".week");
+      const infoContainer = document.querySelector(".info");
+
+      weeks.forEach((week) => {
+        week.addEventListener("click", function () {
+          // Remove a classe active de todas as semanas
+          weeks.forEach((w) => w.classList.remove("active"));
+          // Adiciona a classe active na semana clicada
+          this.classList.add("active");
+          // Atualiza as informações
+          const semana = this.textContent.trim();
+          const infos = infoSemanas[semana];
+          if (infos) {
+            infoContainer.innerHTML = `
+        <img class="farmer" src="IMG/Farm02.png" alt="Agricultor">
+        <div class="info-box">${infos[0]}</div>
+        <div class="info-box">${infos[1]}</div>
+      `;
+          } else {
+            infoContainer.innerHTML = `
+        <img class="farmer" src="IMG/Farm02.png" alt="Agricultor">
+        <div class="info-box">Sem informações para esta semana.</div>
+      `;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

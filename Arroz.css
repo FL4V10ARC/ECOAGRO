@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5e7c2;
+  color: #1b1b1b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* centraliza horizontalmente */
+}
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem 0 0.5rem 0; /* remove o padding-left */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.logo {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin-left: 0; /* garante que não tenha margem à esquerda */
+}
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2e5d38;
+  margin: 20px 0;
+  text-align: center;
+}
+.seasons {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.season {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espaço entre a imagem e o texto */
+}
+.season img {
+  width: 40px;
+  height: 40px;
+}
+.season p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+.phases {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.phase {
+  background-color: #7ab66e;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+}
+.weeks {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.weeks-title {
+  display: inline-block;
+  background: #fff;
+  color: #7ab66e;
+  font-weight: bold;
+  padding: 6px 36px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: -18px;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.week-labels {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: #7ab66e;
+  border-radius: 16px;
+  padding: 18px 8px 10px 8px; /* diminui o padding lateral */
+  margin-top: 18px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px; /* define um comprimento máximo */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.week {
+  background-color: #fff;
+  border: 2px solid #2e5d38;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #2e5d38;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.week.active {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.info-box {
+  background-color: #d4eac7;
+  padding: 10px 20px; /* padding vertical menor */
+  border-radius: 10px;
+  margin: 5px;
+  font-size: 1.25rem; /* aumenta o tamanho do texto */
+  box-sizing: border-box;
+  min-width: unset; /* remove largura mínima fixa */
+  max-width: 450px; /* limite opcional de largura */
+  display: inline-block; /* faz o fundo acompanhar o texto */
+  flex: none; /* não força ocupar todo o espaço */
+  line-height: 1.3; /* altura de linha confortável e compacta */
+}
+.back-button {
+  background-color: #2e5d38;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.farmer {
+  float: left;
+  margin-right: 20px;
+  max-width: 200px;
+}
+.img-redonda {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 0; /* zera o valor anterior */
+  background: #f3e6c4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+.seasons-row {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 100px 40px 40px 100px;
+  padding: 0 30px 0 0;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  margin-left: 16px; /* espaço pequeno à esquerda */
+}
+
+.seasons-cards {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.season-card {
+  background: transparent;
+  border-radius: 30px;
+  flex: 1;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  min-width: 120px;
+}
+
+.season-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+.season-card p {
+  margin: 0;
+  color: #2e5d38;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.season-card span {
+  display: block;
+  color: #222;
+  font-size: 1rem;
+  margin-top: 2px;
+}
