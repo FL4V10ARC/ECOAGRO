@@ -65,17 +65,18 @@ Este projeto está licenciado sob a licença [MIT License] - veja o arquivo [MIT
 
 ## 📧 Contato
 
+* [BEATRIZ] (Beatrizteixeira3913@gmail.com(mailro:Beatrizteixeira3913@gmail.com))
+* https://www.linkedin.com/in/beatriz-t/
+
+* [CARLOS] (carlosfnsicsu@gmail.com(mailto:carlosfnsicsu@gmail.com))
+* https://www.linkedin.com /in/carlos-sics%C3%BA-131980236/
+
+* [EMILLY] (moraisemilly358@gmail.com(mailto:moraisemilly358@gmail.com))
+* http://linkedin.com/in/emilly-morais-bulcão-1a17bb2b2/
+
 * [FLAVIO] (flavicarvalho9029@gmail.com(mailto:flaviocarvalho9029@gmail.com))
 * https://www.linkedin.com/in/flávio-carvalho-79294a217/
-  
-*[BEATRIZ] (Beatrizteixeira3913@gmail.com(mailro:Beatrizteixeira3913@gmail.com))
-*https://www.linkedin.com/in/beatriz-t/
 
-*[EMILY] (moraisemilly358@gmail.com(mailto:moraisemilly358@gmail.com))
-*http://linkedin.com/in/emilly-morais-bulcão-1a17bb2b2/
-
-*[CARLOS] (carlosfnsicsu@gmail.com(mailto:carlosfnsicsu@gmail.com))
-*https://www.linkedin.com /in/carlos-sics%C3%BA-131980236/
 
 ## 🚀 Próximos Passos
 
