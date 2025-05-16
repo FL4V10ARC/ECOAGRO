@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="styleprevisãodotempo.css" />
+    <link rel="icon" type="image/png" href="Imagens/1.Index/Icone EcoAgro.png">
+  </head>
+  <body>
+    <div class="container">
+      <button class="image-button" onclick="goToIndex()">
+        <img src="Imagens/6.Previsão do Tempo/Logo EcoAgro.png" alt="Logo EcoAgro">
+      </button>
+
+      <header>
+        <h1>Previsão do Tempo</h1>
+      </header>
+
+      <section class="previsao">
+        <div class="hoje">
+          <div class="temp-com-icone">
+            <img src="Imagens/6.Previsão do Tempo/Icone Clima.png" alt="Sol">
+            <h2>36º</h2>
+          </div>
+          <p>Manaus, AM<br>Domingo, 19 de Março</p>
+        </div>
+
+        <div class="dias">
+          <div class="dia">
+            <div class="temp-com-icone">
+              <img src="Imagens/6.Previsão do Tempo/Icone Sol.png" alt="Sol">
+              <span>38º</span>
+            </div>
+            <p>Segunda, 20</p>
+          </div>
+          <div class="dia">
+            <div class="temp-com-icone">
+              <img src="Imagens/6.Previsão do Tempo/Icone Sol.png" alt="Sol">
+              <span>35º</span>
+            </div>
+            <p>Terça, 21</p>
+          </div>
+          <div class="dia">
+            <div class="temp-com-icone">
+              <img src="Imagens/6.Previsão do Tempo/Icone Nuvem.png" alt="Chuva">
+              <span>28º</span>
+            </div>
+            <p>Quarta, 22</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="dados">
+        <h2>Dados de Hoje, 19 de Março</h2>
+        <div class="cartoes">
+          <div class="cartao">
+            <h3>Clima</h3>
+            <div class="info-cartao">
+              <img src="Imagens/6.Previsão do Tempo/Icone Clima.png" alt="Sol">
+              <p>Ensolarado<br>Céu limpo</p>
+            </div>
+          </div>
+          <div class="cartao">
+            <h3>Temperatura</h3>
+            <div class="info-cartao">
+              <img src="Imagens/6.Previsão do Tempo/Icone Temperatura.png" alt="Termômetro">
+              <p>36º<br>Min: 33º | Máx: 37º</p>
+            </div>
+          </div>
+          <div class="cartao">
+            <h3>Umidade</h3>
+            <div class="info-cartao">
+              <img src="Imagens/6.Previsão do Tempo/Icone Umidade.png" alt="Umidade">
+              <p>30%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <img src="Imagens/6.Previsão do Tempo/Icone Fazendeiros.png" alt="Fazendeiros" class="fazendeiros">
+      </footer>
+    </div>
+
+    <script>
+      function goToIndex() {
+        window.location.href = "dashboard.html";
+      }
+    </script>
+  </body>
+</html>

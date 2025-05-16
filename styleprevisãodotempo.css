@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5e7c2;
+  margin: 0;
+  padding: 0;
+  color: #21461b;
+}
+
+.image-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.image-button img {
+  width: 150px;
+  height: auto;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 20px;
+}
+
+h1 {
+  font-size: 45px;
+  margin-top: -40px;
+  margin-bottom: -10px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.previsao {
+  background-color: #79ab6e;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 860px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.hoje {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.hoje p {
+  margin: 0;
+  text-align: center;
+}
+
+.temp-com-icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.temp-com-icone img {
+  width: 100px;
+  height: auto;
+}
+
+.temp-com-icone h2,
+.temp-com-icone span {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+.dias {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dia {
+  background-color: #21461b;
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #79ab6e;
+  width: 100px;
+}
+
+.dia p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.dados {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.dados h2 {
+  font-size: 45px;
+  margin-right: 200px;
+  margin-bottom: 30px;
+  color: #21461b;
+}
+
+.cartoes {
+  display: flex;
+  margin-right: 200px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.cartao {
+  background-color: #76a769;
+  padding: 0;
+  border-radius: 15px;
+  text-align: center;
+  color: #21461b;
+  width: 220px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.cartao h3 {
+  background-color: #21461b;
+  color: white;
+  padding: 10px;
+  margin: 0;
+}
+
+.cartao img {
+  width: 100px;
+  margin: 15px 0 10px;
+}
+
+.cartao p {
+  padding: 0 10px 15px;
+  margin: 0;
+}
+
+.info-cartao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.info-cartao img {
+  width: 100px;
+  height: auto;
+  margin: 0;
+}
+
+.info-cartao p {
+  margin: 0;
+  text-align: left;
+}
+
+footer {
+  display: flex;
+  margin: 30px auto 10px;
+}
+
+.fazendeiros {
+  width: 450px;
+  margin-top: -300px;
+  margin-left: 900px;
+}
