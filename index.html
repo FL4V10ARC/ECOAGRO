@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Imagens/1.Index/Icone EcoAgro.png">
+    <title>ECOAGRO - Login</title>
+</head>
+<body>
+    <div class="container-fluid d-flex">
+        <div class="left-section">
+            <div class="content">
+                <h1>ECOAGRO</h1>
+                <p>Soluções Inteligentes para Agricultura</p>
+                <a href="SaibaMais.html" class="btn btn-custom">Saiba Mais</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="login-container">
+                <h2 class="text-center">Login</h2>
+                <form id="loginForm">
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Usuário</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="@mail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userPassword" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="userPassword" placeholder="********" required>
+                    </div>
+                    <div class="mb-3 form-check d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label ms-2" for="rememberMe">Lembre de mim</label>
+                        <a href="#" class="ms-auto forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <div class="d-flex justify-content-center w-100">
+                        <button type="submit" class="btn btn-custom w-100" style="max-width: 400px;">Entrar</button>
+                    </div>
+                </form>
+                <p class="text-center mt-3">Não tem uma Conta? <a href="Cadastro.html" class="register-link">Cadastre-se</a></p>
+                <div class="social-login text-center">
+                    <p>Logar com</p>
+                    <div class="icon-google">
+                        <img src="Imagens/1.Index/Logo Google.png" alt="Google">
+                    </div>
+                    <div class="icon-facebook">
+                        <img src="Imagens/1.Index/Logo Facebook.webp" alt="Facebook">
+                    </div><div class="icon-apple">
+                        <img src="Imagens/1.Index/Logo Apple.png" alt="Apple">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            window.location.href = "menu.html";
+        });
+    </script>
+</body>
+</html>

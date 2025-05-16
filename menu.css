@@ -15,7 +15,7 @@ html {
 }
 
 .dashboard-container {
-  background-color: #ef1818ea; /* Cor de fallback */
+  background-color: #ffffffea; /* Cor de fallback */
   background-image: url("IMG/Dashboard.png"); /* Caminho da imagem */
   background-size: cover; /* Ajusta a imagem para cobrir todo o contêiner */
   background-position: center; /* Centraliza a imagem */

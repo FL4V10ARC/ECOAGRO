@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro EcoAgro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="Imagens/1.Index/Icone EcoAgro.png">
+</head>
+<body>
+    <button class="image-button" onclick="goToIndex()">
+        <img src="Imagens/3.Cadastro/Logo EcoAgro.png" alt="Botão de imagem">
+    </button>
+    <div class="image-section">
+        <img src="Imagens/3.Cadastro/Fazendeira.png" alt="Ilustração agricultor">
+    </div>
+    <div class="form-section">
+        <h2>DADOS PARA CADASTRO</h2>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" placeholder="Ex.: João da Silva" required>
+            </div>
+            <div class="form-group">
+                <label>CPF</label>
+                <input type="text" id="cpfInput" placeholder="Ex.: 123.456.789-00"
+                maxlength="14" oninput="formatarCPF(this)" required>
+                <span id="cpfError" class="error-message">CPF inválido</span>
+            </div>
+            <div class="form-group">
+                <label>E-mail</label>
+                <input type="email" placeholder="Ex.: joaosilva@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label>Contato</label>
+                <input type="text" id="telefoneInput" placeholder="Ex.: (92) 99123 4567" 
+                maxlength="15" inputmode="numeric" oninput="formatarTelefone(this)" required>
+            </div>
+            <div class="form-group">
+                <label>Cidade do Amazonas</label>
+                <select required>
+                    <option value="" disabled selected>Selecione sua cidade</option>
+                    <option value="alvaraes">Alvarães</option>
+                    <option value="amatura">Amaturá</option>
+                    <option value="anama">Anamã</option>
+                    <option value="anori">Anori</option>
+                    <option value="apui">Apuí</option>
+                    <option value="atalaia_do_norte">Atalaia do Norte</option>
+                    <option value="autazes">Autazes</option>
+                    <option value="barcelos">Barcelos</option>
+                    <option value="barreirinha">Barreirinha</option>
+                    <option value="benjamin_constant">Benjamin Constant</option>
+                    <option value="beruri">Beruri</option>
+                    <option value="boa_vista_do_ramos">Boa Vista do Ramos</option>
+                    <option value="boca_do_acre">Boca do Acre</option>
+                    <option value="borba">Borba</option>
+                    <option value="caapiranga">Caapiranga</option>
+                    <option value="canutama">Canutama</option>
+                    <option value="carauari">Carauari</option>
+                    <option value="careiro">Careiro</option>
+                    <option value="careiro_da_varzea">Careiro da Várzea</option>
+                    <option value="coari">Coari</option>
+                    <option value="codajas">Codajás</option>
+                    <option value="eirunepe">Eirunepé</option>
+                    <option value="envira">Envira</option>
+                    <option value="fonte_boa">Fonte Boa</option>
+                    <option value="guajara">Guajará</option>
+                    <option value="humaita">Humaitá</option>
+                    <option value="ipixuna">Ipixuna</option>
+                    <option value="iranduba">Iranduba</option>
+                    <option value="itacoatiara">Itacoatiara</option>
+                    <option value="itamarati">Itamarati</option>
+                    <option value="itapiranga">Itapiranga</option>
+                    <option value="japura">Japurá</option>
+                    <option value="jurua">Juruá</option>
+                    <option value="jutaí">Jutaí</option>
+                    <option value="labrea">Lábrea</option>
+                    <option value="manacapuru">Manacapuru</option>
+                    <option value="manaquiri">Manaquiri</option>
+                    <option value="manaus">Manaus</option>
+                    <option value="manicore">Manicoré</option>
+                    <option value="maraa">Maraã</option>
+                    <option value="maues">Maués</option>
+                    <option value="nhamunda">Nhamundá</option>
+                    <option value="nova_olinda_do_norte">Nova Olinda do Norte</option>
+                    <option value="novo_airao">Novo Airão</option>
+                    <option value="novo_aripuana">Novo Aripuanã</option>
+                    <option value="parintins">Parintins</option>
+                    <option value="pauini">Pauini</option>
+                    <option value="presidente_figueiredo">Presidente Figueiredo</option>
+                    <option value="rio_preto_da_eva">Rio Preto da Eva</option>
+                    <option value="santa_isabel_do_rio_negro">Santa Isabel do Rio Negro</option>
+                    <option value="santo_antonio_do_ica">Santo Antônio do Içá</option>
+                    <option value="sao_gabriel_da_cachoeira">São Gabriel da Cachoeira</option>
+                    <option value="sao_paulo_de_olivenca">São Paulo de Olivença</option>
+                    <option value="sao_sebastiao_do_uatuama">São Sebastião do Uatumã</option>
+                    <option value="silves">Silves</option>
+                    <option value="tabatinga">Tabatinga</option>
+                    <option value="tapaua">Tapauá</option>
+                    <option value="tefe">Tefé</option>
+                    <option value="tonantins">Tonantins</option>
+                    <option value="uarini">Uarini</option>
+                    <option value="urucara">Urucará</option>
+                    <option value="urucurituba">Urucurituba</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-registrar">Registrar</button>
+        </form>
+    </div>
+    <script>
+        function goToIndex() {
+            window.location.href = "index.html";
+        }
+        function validarCPF(cpf) {
+            cpf = cpf.replace(/\D/g, '');
+           
+            if (cpf.length !== 11 || /^(\d)\1{10}$/.test(cpf)) {
+                return false;
+            }
+            let soma = 0;
+            for (let i = 0; i < 9; i++) {
+                soma += parseInt(cpf.charAt(i)) * (10 - i);
+            }
+            let resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            if (resto !== parseInt(cpf.charAt(9))) {
+                return false;
+            }
+            soma = 0;
+            for (let i = 0; i < 10; i++) {
+                soma += parseInt(cpf.charAt(i)) * (11 - i);
+            }
+            resto = (soma * 10) % 11;
+            if (resto === 10 || resto === 11) resto = 0;
+            if (resto !== parseInt(cpf.charAt(10))) {
+                return false;
+            }
+            return true;
+        }
+        document.getElementById('cpfInput').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+           
+            if (value.length > 3 && value.length <= 6) {
+                value = value.replace(/(\d{3})(\d)/, '$1.$2');
+            } else if (value.length > 6 && value.length <= 9) {
+                value = value.replace(/(\d{3})(\d{3})(\d)/, '$1.$2.$3');
+            } else if (value.length > 9) {
+                value = value.replace(/(\d{3})(\d{3})(\d{3})(\d)/, '$1.$2.$3-$4');
+            }
+           
+            e.target.value = value;
+        });
+        document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+           
+            const cpfInput = document.getElementById('cpfInput');
+            const cpfError = document.getElementById('cpfError');
+            const cpf = cpfInput.value;
+           
+            if (!validarCPF(cpf)) {
+                cpfInput.classList.add('input-error');
+                cpfError.style.display = 'block';
+                return;
+            }
+           
+            cpfInput.classList.remove('input-error');
+            cpfError.style.display = 'none';
+           
+            alert('Cadastro realizado com sucesso!');
+            goToIndex();
+        });
+        function formatarTelefone(input) {
+            let value = input.value.replace(/\D/g, ""); // Remove tudo que não for número
+            if (value.length > 11) value = value.slice(0, 11); // Limita a 11 dígitos
+            if (value.length > 2) {
+                value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+             }
+            if (value.length > 9) {
+                value = value.replace(/(\(\d{2}\)) (\d{5})(\d+)/, "$1 $2-$3");
+            } else if (value.length > 8) {
+                value = value.replace(/(\(\d{2}\)) (\d{4})(\d+)/, "$1 $2-$3");
+            }
+                input.value = value;
+        }
+    </script>
+</body>
+</html>

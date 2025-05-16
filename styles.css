@@ -1,0 +1,375 @@
+/* Começo do Index */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+}
+
+.left-section {
+    width: 60%;
+    background: url('Imagens/1.Index/Background.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+}
+
+.left-section h1 {
+    font-family: 'League Spartan';
+    font-size: 120px;
+    font-weight: bold;
+    color: #154D1D;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+.left-section p {
+    font-family: 'Codec Pro';
+    font-size: 40px;
+    color: #154D1D;
+}
+
+.btn-custom {
+    background-color: #154D1D;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #0d3a15;
+}
+
+.right-section {
+    width: 50%;
+    background: #f5e7c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    right: 80px;
+}
+
+.login-container h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #154D1D;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: orange;
+    font-size: 14px;
+}
+
+.register-link {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.social-login p {
+    font-family: 'League Spartan';
+    font-size: 30px !important;
+    margin-bottom: -20px;   
+}
+
+.social-login p {
+    font-size: 16px;
+    color: #154D1D;
+}
+
+.icon-google img{
+    width: 50px;
+    margin: 30px;
+    margin-left: -200px;
+    cursor: pointer;
+}
+
+.icon-facebook img {
+    width: 80px;
+    margin-top: -135px;
+    cursor: pointer;
+}
+
+.icon-apple img {
+    width: 45px;
+    margin-top: -190px;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+/* Fim do Index */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Começo do Cadastro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e7c2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button img {
+    width: 150px;
+    height: auto;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-section h2 {
+    color: #21461b;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.form-group {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #21461b;
+    margin-bottom: 5px;
+    margin-left: -150px;
+}
+
+.form-group input {
+    width: 600%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: -160px;
+    box-sizing: border-box;
+}
+
+.form-group select {
+    width: 600%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: -160px;
+    box-sizing: border-box;
+}
+
+.btn-registrar {
+    width: 600%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-left: -160px;
+    box-sizing: border-box;
+}
+
+.btn-registrar {
+    background-color: #21461b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-registrar:hover {
+    background-color: #367c39;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
+/*Fim do Cadastro */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Começo do Saiba Mais*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e5c2;
+    margin: 0;
+    padding: 0;
+    color: #2f4d28;
+}
+
+header {
+    background-color: #2f4d28;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+h2 {
+    color: #2f4d28;
+    border-left: none;
+    padding-left: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    padding-left: 15px;
+    position: relative;
+}
+
+ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #4a7c59;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+/*Fim do Saiba Mais*/
+
+
+
+
+
+
+
+
+
+
+

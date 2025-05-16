@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoAgro - Cadastro de Insumos</title>
+    <link rel="stylesheet" href="CadastroDeInsumos.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="Imagens/1.Index/Icone EcoAgro.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <button class="image-button" onclick="window.location.href='menu.html'">
+      <img src="Imagens/3.Cadastro/Logo EcoAgro.png" alt="Botão de imagem" />
+    </button>
+
+    <div class="form-section">
+      <h2 class="form-title">DADOS PARA CADASTRO</h2>
+    </div>
+    <div class="form-section">
+      <form id="cadastroForm">
+        <div class="form-group">
+          <label>Tipo de Transação</label>
+          <input type="text" placeholder="Ex.: Entrada" required />
+        </div>
+        <div class="form-group">
+          <label>Tipo de Insumo</label>
+          <input type="text" placeholder="Ex.: Fertilizantes" required />
+        </div>
+        <div class="form-group">
+          <label>Validade</label>
+          <input type="date" placeholder="Ex.: 01/01/1900" required />
+        </div>
+        <div class="form-group">
+          <label>Qtd</label>
+          <input type="text" placeholder="Ex.: 1kg" required />
+        </div>
+
+        <button type="submit" class="btn-registrar">Adicionar</button>
+      </form>
+    </div>
+    <script>
+      function goToIndex() {
+        window.location.href = "index.html";
+      }
+    </script>
+    <body></body>
+  </body>
+</html>

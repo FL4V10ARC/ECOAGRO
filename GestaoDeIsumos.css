@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    max-width:100%;
+    height: 100vh;
+    background: url('Imagens/6.Gestão\ de\ Insumos/Background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: center;
+    padding-top: 30px;
+}
+
+.image-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button img {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 32px;
+  color: #21461b;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+main {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza tudo dentro do main */
+}
+
+.insumo {
+  background-color: white;
+  margin: 20px auto;
+  padding: 15px 50px 15px 110px; /* espaço à esquerda para a imagem */
+  border-radius: 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  min-width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o conteúdo em relação à imagem */
+  border-radius: 9999px; /* Valor exagerado que cria bordas perfeitamente arredondadas */
+    /* Isso criará um efeito de cápsula onde as extremidades são semicírculos perfeitos */
+    
+}
+
+/* Para todas as imagens ficarem iguais */
+.insumo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 4px solid #fdf1d6;
+}
+
+/* Remova ou ajuste este bloco se quiser todas iguais */
+/*
+.insumo img[alt="Sementes"] {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+*/
+
+h2 {
+  margin: 30px 0 6px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 500px; /* igual ao bloco branco */
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px; /* espaço entre as informações */
+  text-align: left;
+  margin-left: 0;
+  line-height: 1.6;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-item strong {
+  font-size: 15px;
+  margin-bottom: 2px;
+}
+
+.info p {
+  margin: 0;
+  white-space: nowrap; /* impede quebra de linha */
+}
+
+.cadastro-btn {
+  background-color: #1f4f1a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 30px auto;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.cadastro-btn:hover {
+  background-color: #37692a;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.insumo-container {
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.insumo-container h2 {
+    margin: 0 0 10px 110px; /* Ajuste o valor left (110px) para alinhar com o conteúdo */
+    font-size: 18px;
+    font-weight: bold;
+    color: #21461b;
+    text-align: left;
+}
