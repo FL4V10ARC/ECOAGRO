@@ -1,11 +1,6 @@
 # EcoAgro: Soluções Inteligentes para a Agricultura Amazônica
 
-[![Status do Projeto](https://img.shields.io/badge/status-em_desenvolvimento-yellow)
-(https://github.com/FL4V10ARC/ECOAGRO)
-[![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)
-(https://opensource.org/license/mit)
-![Linguagens](https://img.shields.io/github/languages/count/FL4V10ARC/ECOAGRO)   
-![Último Commit](https://img.shields.io/github/last-commit/FL4V10ARC/ECOAGRO)   
+![Status do Projeto](https://img.shields.io/badge/status-em_desenvolvimento-yellow) ![Licença](https://img.shields.io/badge/licença-MIT-blue.svg) ![Linguagens](https://img.shields.io/github/languages/count/FL4V10ARC/ECOAGRO)   ![Último Commit](https://img.shields.io/github/last-commit/FL4V10ARC/ECOAGRO)   
 
 ## 🌿 Sobre o EcoAgro
 
